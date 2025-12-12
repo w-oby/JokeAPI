@@ -1,3 +1,9 @@
+# USED SOURCES:
+# https://www.geeksforgeeks.org/python/exception-handling-of-python-requests-module/
+# https://stackoverflow.com/questions/16511337/correct-way-to-try-except-using-python-requests-module
+# https://requests.readthedocs.io/en/latest/user/quickstart/#errors-and-exceptions
+# https://docs.python-requests.org/en/latest/user/quickstart/#response-status-codes
+
 import requests
 
 # Localhosting a server
