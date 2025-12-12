@@ -1,3 +1,16 @@
+# USED SOURCES:
+# https://docs.python.org/3/library/functions.html#open
+# https://www.w3schools.com/python/python_try_except.asp
+# https://realpython.com/python-exceptions
+# https://docs.python-requests.org/en/latest/user/quickstart/#make-a-request
+# https://stackoverflow.com/questions/17301938/making-a-request-to-a-restful-api-using-python
+# https://www.datacamp.com/tutorial/making-http-requests-in-python
+# https://flask.palletsprojects.com/en/stable/api/
+# https://flask.palletsprojects.com/en/stable/tutorial/factory/
+# https://stackoverflow.com/questions/29882642/how-to-run-a-flask-application
+# https://www.geeksforgeeks.org/python/how-to-run-a-flask-application/
+# https://flask.palletsprojects.com/en/stable/server/
+
 import json
 import random
 
@@ -51,3 +64,8 @@ def get_random_joke():
     random_joke = random.choice(jokes)
 
     return jsonify(random_joke)
+
+# In-code starting of server - saves you from hassle :)
+if __name__ == '__main__':
+
+    app.run()
