@@ -1,0 +1,240 @@
+{
+  "jokes": [
+    {
+      "id": 1,
+      "joke": "Why don't programmers like nature? It has too many bugs."
+    },
+    {
+      "id": 2,
+      "joke": "What's the object-oriented way to become wealthy? Inheritance."
+    },
+    {
+      "id": 3,
+      "joke": "I would tell you a UDP joke, but you might not get it."
+    },
+    {
+      "id": 4,
+      "joke": "There are 10 types of people in the world: those who understand binary, and those who don't."
+    },
+    {
+      "id": 5,
+      "joke": "How do you comfort a JavaScript bug? You console it."
+    },
+    {
+      "id": 6,
+      "joke": "A programmer puts two glasses on his bedside table before going to sleep. A full one, in case he gets thirsty, and an empty one, in case he doesn't."
+    },
+    {
+      "id": 7,
+      "joke": "Why did the programmer quit his job? Because he didn't get arrays."
+    },
+    {
+      "id": 8,
+      "joke": "What's a programmer's favorite place to hang out? The Foo Bar."
+    },
+    {
+      "id": 9,
+      "joke": "Why do Java developers wear glasses? Because they don't C#."
+    },
+    {
+      "id": 10,
+      "joke": "I've got a great joke about networking, but I think it's over your head."
+    },
+    {
+      "id": 11,
+      "joke": "What do you call a fish with no eyes? A fsh."
+    },
+    {
+      "id": 12,
+      "joke": "Why did the scarecrow win an award? Because he was outstanding in his field."
+    },
+    {
+      "id": 13,
+      "joke": "What do you get when you cross a snowman and a vampire? Frostbite."
+    },
+    {
+      "id": 14,
+      "joke": "Why don't scientists trust atoms? Because they make up everything."
+    },
+    {
+      "id": 15,
+      "joke": "What do you call a lazy kangaroo? Pouch potato."
+    },
+    {
+      "id": 16,
+      "joke": "A man walks into a zoo. The only animal in the entire zoo is a dog. It's a shih tzu."
+    },
+    {
+      "id": 17,
+      "joke": "What do you call a magic dog? A Labracadabrador."
+    },
+    {
+      "id": 18,
+      "joke": "Why did the cow cross the road? To get to the udder side."
+    },
+    {
+      "id": 19,
+      "joke": "How does a penguin build its house? Igloos it together."
+    },
+    {
+      "id": 20,
+      "joke": "What did the horse say after it tripped? 'Help! I've fallen and I can't giddyup!'"
+    },
+    {
+      "id": 21,
+      "joke": "My grief counselor died. He was so good, I don't even care."
+    },
+    {
+      "id": 22,
+      "joke": "I asked my date to meet me at the gym, but she never showed up. I guess the two of us aren't going to work out."
+    },
+    {
+      "id": 23,
+      "joke": "They laughed at my crayon drawing. I laughed at their chalk outline."
+    },
+    {
+      "id": 24,
+      "joke": "I told my doctor I broke my arm in two places. He told me to stop going to those places."
+    },
+    {
+      "id": 25,
+      "joke": "What's the last thing to go through a fly's mind as it hits your windshield? Its butt."
+    },
+    {
+      "id": 26,
+      "joke": "My grandfather always said 'Don't put all your eggs in one basket.' He was a terrible grocery packer."
+    },
+    {
+      "id": 27,
+      "joke": "Why don't cannibals eat clowns? Because they taste funny."
+    },
+    {
+      "id": 28,
+      "joke": "The doctor gave me one year to live, so I shot him. The judge gave me 20 years. Problem solved."
+    },
+    {
+      "id": 29,
+      "joke": "It's important to have a good vocabulary. If I had known the difference between 'antidote' and 'anecdote,' one of my best friends would still be alive."
+    },
+    {
+      "id": 30,
+      "joke": "You don't need a parachute to go skydiving. You need a parachute to go skydiving twice."
+    },
+    {
+      "id": 31,
+      "joke": "I was sober for a year but it was the worst year of my life."
+    },
+    {
+      "id": 32,
+      "joke": "A dyslexic man walks into a bra."
+    },
+    {
+      "id": 33,
+      "joke": "I'm on a whiskey diet. I've lost three days already."
+    },
+    {
+      "id": 34,
+      "joke": "Reality is an illusion that occurs due to a lack of alcohol."
+    },
+    {
+      "id": 35,
+      "joke": "An Irishman walks out of a bar. It could happen!"
+    },
+    {
+      "id": 36,
+      "joke": "Why did the man get fired from the brewery? He was caught drinking on the job."
+    },
+    {
+      "id": 37,
+      "joke": "I saw a sign that said 'Drink Canada Dry.' So I did."
+    },
+    {
+      "id": 38,
+      "joke": "I don't have a drinking problem. I drink, I get drunk, I fall down. No problem."
+    },
+    {
+      "id": 39,
+      "joke": "What's the difference between a drunk and a potty? One is a vessel for waste, and the other is a toilet."
+    },
+    {
+      "id": 40,
+      "joke": "My doctor told me to watch my drinking. So I'm off to a bar with a view."
+    },
+    {
+      "id": 41,
+      "joke": "Why was the motherboard so sad? Her kids wouldn't chip in for her birthday."
+    },
+    {
+      "id": 42,
+      "joke": "I have a joke about a computer's memory, but I forgot it."
+    },
+    {
+      "id": 43,
+      "joke": "What's a computer's favorite snack? Microchips."
+    },
+    {
+      "id": 44,
+      "joke": "What does a computer do for lunch? It has a byte."
+    },
+    {
+      "id": 45,
+      "joke": "What do you call a computer that sings? A-dell."
+    },
+    {
+      "id": 46,
+      "joke": "Why was the computer cold? It left its Windows open."
+    },
+    {
+      "id": 47,
+      "joke": "What's the best way to learn about computers? From a book, because they have a hard drive."
+    },
+    {
+      "id": 48,
+      "joke": "Why did the computer get a promotion? It had a lot of drive."
+    },
+    {
+      "id": 49,
+      "joke": "What do you call a computer floating in the ocean? A Dell rolling in the deep."
+    },
+    {
+      "id": 50,
+      "joke": "Why did the computer go to the doctor? It had a bad case of the blue screen of death."
+    },
+    {
+      "id": 51,
+      "joke": "What did the spider do on the computer? It made a website."
+    },
+    {
+      "id": 52,
+      "joke": "Why did the computer get a divorce? It couldn't find its space bar."
+    },
+    {
+      "id": 53,
+      "joke": "What do you call a computer that's always hungry? A cookie monster."
+    },
+    {
+      "id": 54,
+      "joke": "Why did the computer get a ticket? It was speeding on the information superhighway."
+    },
+    {
+      "id": 55,
+      "joke": "What's a computer's favorite beat? An algo-rhythm."
+    },
+    {
+      "id": 56,
+      "joke": "What do you call a computer that's always late? A lag-top."
+    },
+    {
+      "id": 57,
+      "joke": "Why was the CPU so good at music? Because it had a lot of cores."
+    },
+    {
+      "id": 58,
+      "joke": "What did the motherboard say to the CPU? 'You're the brains of this operation.'"
+    },
+    {
+      "id": 59,
+      "joke": "Why did the GPU go to art school? To work on its rendering."
+    }
+  ]
+}
