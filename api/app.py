@@ -10,13 +10,44 @@
 # https://stackoverflow.com/questions/29882642/how-to-run-a-flask-application
 # https://www.geeksforgeeks.org/python/how-to-run-a-flask-application/
 # https://flask.palletsprojects.com/en/stable/server/
+# https://docs.python.org/3/library/os.html
+# https://www.w3schools.com/python/module_os.asp
+# https://docs.python.org/3/library/atexit.html
+# https://www.geeksforgeeks.org/python/python-exit-handlers-atexit/
+# https://www.w3schools.com/python/ref_module_atexit.asp
 
 import json
 import random
+import os
+import atexit
 
 from flask import Flask, jsonify
 
 app = Flask(__name__)
+
+# New PID file to bind the start up process of JokeAPI server to an ID that we can control through scripts
+PID = "jokeapi_server.pid"
+
+# Deletes PID file
+def delete_pid_file():
+
+    if os.path.exists(PID):
+
+        os.remove(PID)
+
+# Creates PID file
+def create_pid_file():
+
+    # Assigns a PID to processid variable
+    processid = os.getpid()
+
+    # Opens the PID file and assigns variable with PID number to it
+    with open(PID, 'w') as file:
+
+        file.write(str(processid))
+
+    # At exit the method delete_pid_file will be called
+    atexit.register(delete_pid_file)
 
 # Pull up joke data
 def load_jokes():
@@ -67,5 +98,8 @@ def get_random_joke():
 
 # In-code starting of server - saves you from hassle :)
 if __name__ == '__main__':
+
+    # Calling of a method for creation of PID file when JokeAPI server starts up
+    create_pid_file()
 
     app.run()
