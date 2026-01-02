@@ -44,7 +44,7 @@ The project utilizes a Flask server, a CLI window, automated setup and startup p
 
       A single window will open, and you will immediately be presented with a joke. Press the spacebar for a new joke. Press ESC to exit the application and shut down the server.
    
-## ✔️ Testing the code with Pytest
+# ✔️ Testing the code with Pytest
 The testsuite tests and validates the functionality of the API and its error handling. To run the tests, follow these steps:
 
 1. Open a CLI terminal and navigate your terminal to the project's root directory.
