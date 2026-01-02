@@ -23,12 +23,12 @@ def fetch_joke():
         
         data = response.json()
         
-        print("\n" + "//"*20)
+        print("\n" + "="*100 + "\n" + "="*100 + "\n")
 
         # Get joke, otherwise print message "No joke found".
         print(f"{data.get('joke', 'No joke found.')}")
 
-        print("//"*20 + "\n")
+        print("\n" + "="*100 + "\n" + "="*100 + "\n")
 
     # Generic catch-all exception, instead of anything specific
     except requests.exceptions.RequestException:
