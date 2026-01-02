@@ -14,6 +14,9 @@ import msvcrt # Better than pynput or keyboard library for detection of keypress
 import os
 import subprocess # Handling processes which allows me to manipulate (run, edit, delete) them
 import sys
+from colorama import init, Fore, Style
+
+init()
 
 # Localhosting a server
 API_URL = "http://127.0.0.1:5000/api/jokes/random"
@@ -24,7 +27,7 @@ PID = "jokeapi_server.pid"
 # Fetching a joke
 def fetch_joke():
 
-    print("Fetching a random joke from the API...")
+    print(Style.NORMAL+ Fore.YELLOW + "Fetching a random joke from the API...")
     
     try:
 
@@ -35,17 +38,17 @@ def fetch_joke():
         
         data = response.json()
         
-        print("\n" + "="*100 + "\n" + "="*100 + "\n")
+        print(Style.BRIGHT + Fore.LIGHTYELLOW_EX +"\n" + "="*100 + "\n" + "="*100 + "\n")
 
         # Get joke, otherwise print message "No joke found".
-        print(f"{data.get('joke', 'No joke found.')}")
+        print(Style.BRIGHT + Fore.CYAN + f"{data.get('joke', 'No joke found.')}")
 
-        print("\n" + "="*100 + "\n" + "="*100 + "\n")
+        print(Style.BRIGHT + Fore.LIGHTYELLOW_EX + "\n" + "="*100 + "\n" + "="*100 + "\n")
 
     # Generic catch-all exception, instead of anything specific
     except requests.exceptions.RequestException:
         
-        print("\nError: Failed to fetch a joke. Please make sure the API server is set up and running.")
+        print(Style.NORMAL + Fore.RED + "\nError: Failed to fetch a joke. Please make sure the API server is set up and running.")
 
 def kill_jokeapi_server():
 
@@ -58,7 +61,7 @@ def kill_jokeapi_server():
                 # Contents of file is to be read and stripped to prevent escaping of characters that might have been caused by Windows' CRLF behavior
                 pid = file.read().strip()
 
-            print(f"Shutting down JokeAPI server")
+            print(Style.NORMAL+ Fore.YELLOW + f"Shutting down JokeAPI server")
 
             # Command to kill a specifically targeted PID by force. Capture_output is a bit weird, seeing as I would have expected capture_output=True to start logging and printing output, but guess that's not the case for this library.
             subprocess.run(["taskkill", "/F", "/PID", pid], capture_output=True, text=True)
@@ -68,11 +71,11 @@ def kill_jokeapi_server():
 
     except (FileNotFoundError, ValueError):
 
-        print("Could not find PID file. Try manually closing it in Task Manager.")
+        print(Style.NORMAL + Fore.RED + "Could not find PID file. Try manually closing it in Task Manager.")
 
     except Exception as e:
 
-        print(f"Could not stop the server. See error: {e}")
+        print(Style.NORMAL + Fore.RED + f"Could not stop the server. See error: {e}")
 
 def main_code():
     
@@ -80,7 +83,7 @@ def main_code():
 
     while True:
 
-        print("Press SPACEBAR for a new joke, or ESC to exit.")
+        print(Style.NORMAL + Fore.GREEN + "Press SPACEBAR for a new joke, or ESC to exit." + "\n")
 
         # getch() looks for any keypress input and then assigns that to variable key. We can then manipulate the variable.
         key = msvcrt.getch()
@@ -108,7 +111,7 @@ if __name__ == "__main__":
         # Self-explanatory
         kill_jokeapi_server()
 
-        print("Closing application...")
+        print(Fore.GREEN + "Closing application...")
 
         # True exit
         sys.exit(0)
