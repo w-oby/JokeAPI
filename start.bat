@@ -13,10 +13,14 @@
 
 title JokeAPI
 
-echo Starting the JokeAPI server in the background...
+set VENV_NAME=jokeapi_venv
+
+echo Starting JokeAPI server in the background...
+
+set PYTHON_IN_VENV=%~dp0%VENV_NAME%\Scripts\python.exe
 
 :: Create a VBScript file that runs the app.py file while in background and without printing
-echo CreateObject("Wscript.Shell").Run "python api/app.py", 0, False > start_jokeapi_server.vbs
+echo CreateObject("Wscript.Shell").Run """%PYTHON_IN_VENV%"" ""api/app.py"" ", 0, False > start_jokeapi_server.vbs
 
 :: Run the newly created file
 cscript //nologo start_jokeapi_server.vbs
@@ -26,8 +30,8 @@ del start_jokeapi_server.vbs
 :: A small pause to ensure the server has started up fully
 timeout /t 3 /nobreak >nul
 
-echo Starting the JokeAPI client...
+echo Starting JokeAPI client...
 echo.
 
 :: Execute the user.py script which prompts a CLI window for the user to see.
-python user.py
+"%PYTHON_IN_VENV%" user.py
