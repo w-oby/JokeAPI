@@ -74,6 +74,7 @@ def load_jokes():
 
 jokes = load_jokes()
 
+# Flask's app routing
 @app.route('/api/jokes', methods=['GET'])
 
 # Readying the jokes for use with API

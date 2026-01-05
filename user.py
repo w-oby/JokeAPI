@@ -104,6 +104,7 @@ if __name__ == "__main__":
     # When app starts, execute the try and finally block
     try:
 
+        # Once code in func main_code() finishes or a break occurs the try block is concluded, and the flow will continue to the finally block.
         main_code()
 
     finally:
